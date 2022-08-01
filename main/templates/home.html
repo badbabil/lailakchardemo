@@ -1,0 +1,9 @@
+{%extends "layout.html" %}
+{% block content%}
+    {% for p in post %}
+        <h1>{{ p.title }}</h1>
+        <p>By {{ p.author }}</p>
+        <h2>{{ p.content }}</h2>
+        <h5>{{ p.date_posted }}</h5>
+    {%endfor%}
+{%endblock%}
